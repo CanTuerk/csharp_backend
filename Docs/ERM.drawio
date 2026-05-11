@@ -1,0 +1,90 @@
+<mxfile host="Electron">
+  <diagram name="Page-1" id="dlC3NrDEY-1zM5ZjNnea">
+    <mxGraphModel dx="2062" dy="-251" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-28" edge="1" parent="1" source="DjVO_eaQlWoVJvagcjGc-1" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="DjVO_eaQlWoVJvagcjGc-7" value="1:n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-1" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#a20025;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#6F0000;" value="Case" vertex="1">
+          <mxGeometry height="130" width="170" x="60" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-2" parent="DjVO_eaQlWoVJvagcjGc-1" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Id: int&lt;div&gt;CaseName: string&lt;/div&gt;&lt;div&gt;Description: string&lt;/div&gt;&lt;div&gt;ClientName: string&lt;/div&gt;&lt;div&gt;CaseStatus: CaseStatus&lt;/div&gt;&lt;div&gt;CreatedAt: DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="104" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-5" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#6a00ff;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#3700CC;" value="CaseStatus" vertex="1">
+          <mxGeometry height="80" width="90" x="240" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-6" parent="DjVO_eaQlWoVJvagcjGc-5" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Open&lt;div&gt;Closed&lt;/div&gt;&lt;div&gt;Archived&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="90" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-27" edge="1" parent="1" source="DjVO_eaQlWoVJvagcjGc-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="DjVO_eaQlWoVJvagcjGc-9" value="1:n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-7" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#a20025;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#6F0000;" value="Invoice" vertex="1">
+          <mxGeometry height="120" width="200" x="135" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-8" parent="DjVO_eaQlWoVJvagcjGc-7" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Id: int&lt;div&gt;InvoiceNr: string&lt;/div&gt;&lt;div&gt;TotalAmount: string&lt;/div&gt;&lt;div&gt;InvoiceStatus: InvoiceStatus&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;CreatedAt: DateTime&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;CaseId: int&lt;/font&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="94" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-9" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#a20025;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#6F0000;" value="InvoiceLineItem" vertex="1">
+          <mxGeometry height="180" width="200" x="235" y="1600" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-10" parent="DjVO_eaQlWoVJvagcjGc-9" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Id: int&lt;div&gt;LawyerName: string&lt;/div&gt;&lt;div&gt;Description: string&lt;/div&gt;&lt;div&gt;WorkedDate: DateTime&lt;/div&gt;&lt;div&gt;&lt;span style=&quot;background-color: transparent; color: light-dark(rgb(0, 0, 0), rgb(255, 255, 255));&quot;&gt;DurationHours: decimal&lt;/span&gt;&lt;/div&gt;&lt;div&gt;HourlyRate: decimal&lt;/div&gt;&lt;div&gt;LineTotal: decimal&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;InvoiceId: int&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;TimeEntryId: int&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="154" width="200" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-24" edge="1" parent="1" source="DjVO_eaQlWoVJvagcjGc-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;" target="DjVO_eaQlWoVJvagcjGc-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-11" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#d80073;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#A50040;" value="CaseLawyer" vertex="1">
+          <mxGeometry height="90" width="170" x="-170" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-12" parent="DjVO_eaQlWoVJvagcjGc-11" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;CaseId: int&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;UserId: int&lt;/font&gt;&lt;/div&gt;&lt;div&gt;AssignedAt: DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="64" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-13" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#6a00ff;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#3700CC;" value="InvoiceStatus" vertex="1">
+          <mxGeometry height="80" width="90" x="345" y="1420" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-14" parent="DjVO_eaQlWoVJvagcjGc-13" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Draft&lt;div&gt;Sent&lt;/div&gt;&lt;div&gt;Paid&lt;/div&gt;" vertex="1">
+          <mxGeometry height="54" width="90" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-15" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#a20025;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#6F0000;" value="TimeEntry" vertex="1">
+          <mxGeometry height="180" width="170" x="-170" y="1350" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-16" parent="DjVO_eaQlWoVJvagcjGc-15" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Id: int&lt;div&gt;DurationHours: decimal&lt;/div&gt;&lt;div&gt;Description: string&lt;/div&gt;&lt;div&gt;WorkedDate: DateTime&lt;/div&gt;&lt;div&gt;HourlyRate: decimal&lt;/div&gt;&lt;div&gt;IsInvoiced: bool&lt;/div&gt;&lt;div&gt;CreatedAt: DateTime&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;CaseId: int&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;&lt;div&gt;&lt;b&gt;&lt;font style=&quot;color: rgb(255, 0, 0);&quot;&gt;UserId: int&lt;/font&gt;&lt;/b&gt;&lt;/div&gt;" vertex="1">
+          <mxGeometry height="154" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-23" edge="1" parent="1" source="DjVO_eaQlWoVJvagcjGc-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;startArrow=none;startFill=0;endArrow=none;endFill=0;" target="DjVO_eaQlWoVJvagcjGc-11" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-17" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#a20025;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#6F0000;" value="User" vertex="1">
+          <mxGeometry height="160" width="170" x="-400" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-18" parent="DjVO_eaQlWoVJvagcjGc-17" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Id: int&lt;div&gt;FirstName: string&lt;/div&gt;&lt;div&gt;LastName: string&lt;/div&gt;&lt;div&gt;Email: string&lt;/div&gt;&lt;div&gt;PasswordHash: string&lt;/div&gt;&lt;div&gt;HourlyRate: decimal&lt;/div&gt;&lt;div&gt;Role: UserRole&lt;/div&gt;&lt;div&gt;CreatedAt: DateTime&lt;/div&gt;" vertex="1">
+          <mxGeometry height="134" width="170" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-21" parent="1" style="swimlane;fontStyle=0;childLayout=stackLayout;horizontal=1;startSize=26;fillColor=#6a00ff;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;fontColor=#ffffff;strokeColor=#3700CC;" value="UserRole" vertex="1">
+          <mxGeometry height="70" width="90" x="-500" y="1170" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-22" parent="DjVO_eaQlWoVJvagcjGc-21" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" value="Lawyer&lt;div&gt;Admin&lt;/div&gt;" vertex="1">
+          <mxGeometry height="44" width="90" y="26" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-25" edge="1" parent="1" source="DjVO_eaQlWoVJvagcjGc-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="DjVO_eaQlWoVJvagcjGc-16" value="1:n">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-26" edge="1" parent="1" source="DjVO_eaQlWoVJvagcjGc-2" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="DjVO_eaQlWoVJvagcjGc-16" value="n:1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="DjVO_eaQlWoVJvagcjGc-29" edge="1" parent="1" source="DjVO_eaQlWoVJvagcjGc-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;" target="DjVO_eaQlWoVJvagcjGc-10" value="1:n">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="118" y="1480" />
+              <mxPoint x="118" y="1703" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

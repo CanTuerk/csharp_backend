@@ -28,3 +28,7 @@ This small application will enable a law firm to easily track times spent on ind
 ### Run Command
 
     dotnet run
+
+## ERM
+
+![ERM of the Time Tracker](/Docs/ERM.drawio.png)
