@@ -32,3 +32,14 @@ This small application will enable a law firm to easily track times spent on ind
 ## ERM
 
 ![ERM of the Time Tracker](/Docs/ERM.drawio.png)
+
+## Database
+
+### Install EF Core CLI
+
+     dotnet tool install --global dotnet-ef
+
+### Create and run initial migration
+
+     dotnet ef migrations add InitialCreate
+     dotnet ef database update
